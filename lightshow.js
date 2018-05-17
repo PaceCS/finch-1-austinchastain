@@ -15,11 +15,27 @@ wait(1000);
 
 // Traffic Light
 // Write your code here to model 3 cycles of a traffic light
-
+for (var counter = 0; counter < 3; counter += 1) {
+    finch.setLED(255,0,0);
+    wait(3000);
+    finch.setLED(255,255,0);
+    wait(3000);
+    finch.setLED(0,255,0);
+    wait(3000);
+}
 
 // Light show
 // Write your own code here to create a light show of your choosing
-
+for (var counter = 0; counter < 2; counter += 1) {
+    finch.setLED(200,120,20);
+    wait(1500);
+    finch.setLED(20,0,200);
+    wait(300);
+    finch.setLED(140,120,20);
+    wait(1000);
+    finch.setLED(150,10,200);
+    wait(400);
+}
 
 
 
